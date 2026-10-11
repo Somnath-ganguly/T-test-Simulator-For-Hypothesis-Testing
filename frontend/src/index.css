@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #253449;
+    background-color: #F7F8FA;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Light scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F3F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C1C9D2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A0AEC0;
+}
+
+/* Professional Card Panel */
+.panel-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DDE2E8;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+.panel-card-subtle {
+  background-color: #FAFAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+}
+
+/* Form inputs & focus states */
+input, select, textarea {
+  accent-color: #426B8A;
+}
+
+:focus-visible {
+  outline: 2px solid #426B8A;
+  outline-offset: 1px;
+}
